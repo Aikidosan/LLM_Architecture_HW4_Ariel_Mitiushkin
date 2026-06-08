@@ -75,6 +75,18 @@
   3.12 kernel (was "black" under 3.13/transformers 5.6.2). Updated Task 2 analysis
   (cell-20) in BOTH the source and executed notebooks to say "brown".
 
+## Enhancements for full marks (2026-06-08)
+
+- [x] **Task 1**: filled in both failure-case analyses (kitchen omits fruit bowl; "a brown
+  teddy bear" undercounts 3 bears → 1).
+- [x] **Task 2**: added a 3rd, *natural* failure — counting (2 workers miscounted as "3";
+  BLIP likely counts the painted blue cartoon on the wall as a third person).
+- [x] **Task 3**: open-set recognition — cosine threshold `tau=0.86` + `identify()` that
+  returns "Unknown"; impostor (Serena Williams, cos 0.82) correctly rejected; richer
+  combined answers (wearing/doing/glasses); analysis covers the threshold's limit
+  (look-alike impostors like Rumsfeld at ~0.88 slip through).
+- [x] Added `README.md` + `requirements.txt`; re-executed inplace (0 errors); pushed.
+
 ### Env note
 Notebook kernel = Python 3.12.10, torch 2.11.0+cu128, **transformers 4.57.6**.
 The Bash `python` = Python 3.13, transformers 5.6.2 — different env. Always install
