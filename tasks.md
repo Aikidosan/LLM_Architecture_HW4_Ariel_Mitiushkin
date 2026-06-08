@@ -23,11 +23,10 @@
   (COCO S3 cert mismatch → `verify=False`; dropped dead Wikipedia thumbnail + 404 COCO `…338`).
   All 7 now download; verified captions end-to-end outside the notebook.
 - [x] cell-9: generate captions + display grid — verified working (title fixed base vs large)
-- [ ] cell-10: display the 2 failure-case images + report → run it
-- [ ] cell-11 (markdown): **fill in failure analysis** for the 2 cases
-  - [ ] Failure Case 1 (`…037777`): predicted "a kitchen with a table and chairs" / expected / why
-  - [ ] Failure Case 2 (`…000776`): predicted "a brown teddy bear" / expected / why
-  - tip: "Multiple objects" (two-cats image) drops the 2 remotes — good omission example too
+- [x] cell-10: display 2 failure-case images + structured report (saves task1_failures.png)
+- [x] cell-11 (markdown): failure analysis written (DONE 2026-06-08, images viewed)
+  - Failure Case 1 (`…037777`): "a kitchen with a table and chairs" — omits foreground fruit bowl (incomplete caption)
+  - Failure Case 2 (`…000776`): "a brown teddy bear" — undercounts 3 bears → 1 (multiplicity/occlusion)
 
 **Optional cleanups:**
 - [x] Change deprecated `torch_dtype=` → `dtype=` in cell-7
