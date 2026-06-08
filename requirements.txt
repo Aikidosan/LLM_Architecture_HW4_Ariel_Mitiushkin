@@ -1,0 +1,15 @@
+# Python 3.12. PyTorch must be the CUDA build for an RTX 5090 (Blackwell / sm_120):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+torchvision
+
+# Models (BLIP captioning, BLIP-VQA, CLIP)
+transformers==4.57.6
+huggingface_hub
+
+# Task 3 dataset (LFW) + utilities
+scikit-learn==1.9.0
+numpy
+pillow
+matplotlib
+requests
