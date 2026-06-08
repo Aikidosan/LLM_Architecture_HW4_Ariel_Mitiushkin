@@ -1,0 +1,15 @@
+# Downloaded model weights — large (~4.4 GB total), re-downloadable from HuggingFace
+blip_local/
+blip_vqa_local/
+clip_local/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Scratch / temp
+_probe_*.jpg
+_task3_proto.py
+_task3_final.py
